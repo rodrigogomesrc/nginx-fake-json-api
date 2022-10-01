@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  nginx-app:
+    build: .
+    container_name: nginx-fake-api
+    ports:
+      - 9011:80
+    restart: always
